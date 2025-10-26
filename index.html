@@ -1,101 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <title>Juliana Londono</title>
+  <title>Juliana Londoño Álvarez</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  
+  <!-- 1. Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- 2. Load the 'Inter' font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 3. Set the font for the body -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Style links in the main content sections */
+    section a {
+      color: #2563eb; /* text-blue-600 */
+      font-weight: 500;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+    section a:hover {
+      color: #1d4ed8; /* text-blue-700 */
+    }
+  </style>
+
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800">
 
-
-<nav class="navbar navbar-inverse style="margin-left: 100px;"">
-      <div class="container">
-    <ul class="nav navbar-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#papers">Publications</a></li> 
-              <li><a href="#talks">Selected presentations</a></li> 
-              <li><a href="#teaching">Teaching</a></li> 
-              <li><a href="#other">Other projects</a></li>
-    </ul>
+  <!-- Sticky Header/Navigation -->
+  <nav class="bg-white/95 shadow-sm sticky top-0 z-50 backdrop-blur-sm">
+    <div class="container mx-auto px-4 lg:px-8">
+      <ul class="flex flex-wrap justify-center space-x-6 py-4 text-sm font-medium text-slate-700">
+        <li><a href="#" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#research" class="hover:text-blue-600">Research</a></li> 
+        <li><a href="#talks" class="hover:text-blue-600">Presentations</a></li> 
+        <li><a href="#papers" class="hover:text-blue-600">Publications</a></li> 
+        <li><a href="#teaching" class="hover:text-blue-600">Teaching</a></li> 
+        <li><a href="#other" class="hover:text-blue-600">Other projects</a></li>
+      </ul>
     </div>
   </nav>
   
-  <div class="container">
-        <div class="row">
-        
-            <div class="col-md-3 col-xs-12">
-                <div style="word-wrap: break-word; font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Juliana Londono</b></div><br>
-                <div class="row"> <div class="col-md-10 col-xs-6"> <img class="img-responsive" src="pictures/face.jpg" alt=""></div></div><br>
-                <div> <p>email: juliana_londono_alvarez at brown dot edu<br> </div>
-                <div> <p> <a href="pdfs/CV_Juliana_Londono.pdf">CV</a><br> </div>
-                <div> <p> <a href="https://scholar.google.com/citations?hl=en&user=iKT3-eEAAAAJ">google scholar</a><br> </div>
-                <div> <p> <a href="https://github.com/juliana-londono">github</a><br> </div>
-                <div> <p> <a href="https://www.linkedin.com/in/juliana-londono-alvarez/">linkedin</a><br> </div>
-                <div> <p> <a href="https://twitter.com/juliloal2">twitter</a><br> </div>
-            </div>
-            
-            <div class="col-md-8 col-xs-12">
-                <div class="col" style="margin-top:3%; text-align:justify;">                
-                   <p> I am a Provost's STEM Postdoctoral Fellow in the Division of Applied Mathematics at Brown University. My research investigates how network architecture shapes dynamics, with a particular focus on sequences and oscillations. Using tools from dynamical systems and graph theory, I analyze graph-based Threshold-Linear Networks (TLNs) to formalize the relationship between structure and function. The goal is to derive theoretical principles that can be applied to understand neural computations. A central part of my work involves constructing and analyzing modular networks to understand how components can combine to produce specific dynamic behaviors. This work builds on my Ph.D. in Mathematics from Penn State University with Carina Curto. I got my B.Sc. in Mathematics from Universidad Nacional de Colombia (where I wrote a monograph on De Rham cohomology). </p>
-                </div> 
-                <div class="row">
-                  <div class="column"></div>
-                  <div class="column"></div>
-                </div> 
-                
-            <div class="col">    
-                <h2 id="talks">Selected presentations</h2>
-                  <p>Talk: NITMB MathBio Convergence Conference, Aug 2025 <a href="https://www.nitmb.org/nitmb-mathbio-convergence-conference">[video and slides]</a></p>
-                  <p>🇨🇴 Talk: III Conferencia Colombiana de Matemáticas Aplicadas e Industriales, June 2023 <a href="pdfs/MAPI3ColombiaJunio2024.pdf">[pdf]</a></p>
-                  <p>Talk: Special Session of AMS Sectional Meeting, Oct 2023</p>
-                  <p>Poster: Benzon Symposium 67, Sept 2023 <a href="pdfs/BenzonSymposium67v2.pdf">[pdf]</a></p>
-                  <p>Talk: Flatiron CCN Junior Theoretical Neuroscientist's Workshop, Jun 2023</p>
-                  <p>Talk: NYU CoNNExINS, Jun 2023 </p>
-                  <p>Talk: SMB Diversity in Math Bio summer seminar, Jun 2023</p>
-                  <p>Poster: Society for Neuroscience, Nov 2022 <a href="pdfs/SfNposter2022nov8.pdf">[pdf]</a></p>
-                  <p>Talk: Penn State Theoretical biology seminar, Oct 2022</p>
-                  <p>Poster: Penn State Center for Neural Engineering retreat, Aug 2022</p>
-                  <p>Talk: BIRS Dynamical Principles of Biological and Artificial Neural Networks Workshop, Jan 2022 <a href="https://www.birs.ca/events/2022/5-day-workshops/22w5047/videos/watch/202201130950-LondonoAlvarez.html">[video]</a></p>
-                  <p>Poster: 30th Annual Computational Neuroscience Meeting (CNS), Jul 2021</p>
-            </div>
-
-            <div class="col">    
-                <h2 id="papers">Publications</h2>
-                <p><b> Sequential control of coexistent attractors using combinatorial threshold-linear networks.</b> <b> J. Londono Alvarez</b>, K. Morrison, C. Curto. In preparation.</p>
-                <p><b> <a href="https://dsweb.siam.org/The-Magazine/Article/sequence-generation-in-inhibition-dominated-neural-networks">Sequence generation in inhibition-dominated neural networks (summary of Sequential attractors in combinatorial threshold-linear networks). </a></b> C. Parmelee, <b> J. Londono Alvarez</b>, C. Curto, K. Morrison.</p>
-                <p><b> <a href="https://epubs.siam.org/doi/10.1137/21M1445120">Sequential attractors in combinatorial threshold-linear networks. </a></b> C. Parmelee, <b> J. Londono Alvarez</b>, C. Curto, K. Morrison. SIAM Journal on Applied Dynamical Systems, Vol. 21, Issue 2, pp. 735-1661.</p>
-            </div>
-
-            <div class="col">    
-                <h2 id="teaching">Teaching</h2>
-                  <h4>Instructor</h4>
-                    <ul>
-                        <li>MATH220 – Matrices, Pennsylvania State University (3 semesters)</li>
-                        <li>Vector Geometry, Universidad Nacional de Colombia (2 semesters)</li>
-                    </ul>
-                  <h4>Teaching Assistant</h4>
-                    <ul>
-                        <li>Linear Algebra, Universidad Nacional de Colombia (1 semester)</li>
-                        <li>Vector Geometry, Universidad Nacional de Colombia (3 semesters)</li>
-                    </ul>
-            </div>
-
-            <div class="col">    
-              <h2 id="other">Other projects</h2>
-              <p><b> <a href="https://www.erdosinstitute.org/certificates/spring-2024/data-science-boot-camp/juliana-londono-alvarez"> The impact of urban features on health outcomes.</a></b></p>
-              <p><b> <a href="pdfs/SWDBPresentationSept2022.pdf"> Community detection of neural ensembles from large spike-train data.</a></b></p>
-            </div>
-
-        </div>
-        </div>
-    </div>
+  <!-- Main Content Area -->
+  <div class="container mx-auto p-4 lg:p-8 mt-6">
+    <div class="lg:flex lg:space-x-12">
     
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Very easy-to-use template by Vasilios Mavroudis.</a> 
+        <!-- Left Column (Sidebar) -->
+        <aside class="lg:w-1/4 mb-8 lg:mb-0">
+          <!-- Make the sidebar sticky so it stays in view on desktop -->
+            <div class="sticky top-24"> 
+                <h1 class="text-3xl font-bold text-slate-900 mb-4">Juliana Londoño Álvarez</h1>
+                <img class="img-responsive rounded-full shadow-md mb-6 w-full max-w-xs" src="pictures/face.jpg" alt="Juliana Londoño Álvarez">
+                
+                <!-- Contact Links with Icons -->
+                <div class="space-y-3 text-slate-700">
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-500"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span>email: juliana_londono_alvarez at brown dot edu</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-500"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        <a href="pdfs/Londono_Alvarez_Juliana_CV_20oct2025.pdf" class="font-medium text-blue-600 hover:text-blue-700" target="_blank">CV (English & Spanish)</a>                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-500"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        <a href="https://scholar.google.com/citations?hl=en&user=iKT3-eEAAAAJ" class="font-medium text-blue-600 hover:text-blue-700" target="_blank">Google Scholar</a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-500"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6.1c0-1.3-.5-2.4-1.3-3.2c.1-.3.5-1.5-.1-3.2c0 0-1-.3-3.3 1.3c-1-.3-2.1-.4-3.2-.4c-1.1 0-2.2.1-3.2.4C2.3 2.7 1.3 3 1.3 3c-.6 1.7-.2 2.9-.1 3.2c-.8.8-1.3 1.9-1.3 3.2c0 4.7 2.7 5.8 5.5 6.1c-.6.6-.6 1.2-.5 2V21"></path></svg>
+                        <a href="https://github.com/juliana-londono" class="font-medium text-blue-600 hover:text-blue-700" target="_blank">GitHub</a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-500"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <a href="https://www.linkedin.com/in/juliana-londono-alvarez/" class="font-medium text-blue-600 hover:text-blue-700" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Right Column (Main Content) -->
+        <main class="lg:w-3/4">
+        
+            <!-- Job Market Banner -->
+            <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-5 rounded-lg shadow-sm mb-8">
+                <p class="font-medium">I'm on the <strong>Job Market</strong> for Fall 2026. Please feel free to reach out to discuss my research and teaching.</p>
+            </div>
+
+            <!-- About Me Section -->
+            <section id="about" class="bg-white p-6 lg:p-8 rounded-lg shadow-sm mb-8 scroll-mt-24">
+                <!-- === THIS SECTION IS UPDATED === -->
+                <div class="space-y-4 leading-relaxed text-slate-700">
+                    <p>
+                        I am a Provost's STEM Postdoctoral Fellow in the Division of Applied Mathematics at Brown University, working with <a href="https://ccurto.github.io/" target="_blank">Carina Curto</a>. My research investigates how network architecture shapes dynamics, with a particular focus on sequences and oscillations.
+                    <p>
+                        My approach combines theoretical work with computational simulations, using tools from dynamical systems, graph theory, and linear algebra. I use these to analyze how the connectivity structure of modular graph-based threshold-linear networks (TLNs) shapes their dynamics.
+                    </p>
+                    <p>
+                        The goal of this modular approach is to (1) propose mechanistic hypotheses about how the brain generates and combines complex static and dynamic patterns of activity, and (2) provide design principles for new and efficient neuro-inspired AI and neuromorphic hardware.
+                    </p>
+                    <p>
+                        I obtained my Ph.D. in Mathematics from Penn State University, where I was supervised by <a href="https://ccurto.github.io/" target="_blank">Carina Curto</a>. I obtained my B.Sc. in Mathematics from Universidad Nacional de Colombia, where I wrote a monograph on De Rham cohomology under the supervision of <a href="https://sites.google.com/unal.edu.co/alexander-quintero-velez/home" target="_blank">Alexander Quintero</a>.
+                    </p>
+                </div>
+                <!-- === END OF UPDATE === -->
+            </section>
+            <!-- Research Section -->
+            <section id="research" class="bg-white p-6 lg:p-8 rounded-lg shadow-sm mb-8 scroll-mt-24">
+                <h2 class="text-2xl font-bold text-slate-900 mb-5 border-b pb-3">Research</h2>
+                <div class="space-y-12">
+
+                    <!-- Project 1: Sequential Attractors -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-800 mb-3">1. How do modular network architectures support sequential dynamics?</h3>
+                        
+                        <!-- New Text for Project 1 -->
+                        <div class="leading-relaxed text-slate-700 mb-4">
+                            <p>
+                                This project investigated variations of the cyclic union structure that also support sequential dynamics. As a result, I obtained three new architectures (Fig), each with theorems constraining the fixed points of the whole network in terms of the fixed points of its component subnetworks.
+                            </p>
+                        </div>
+
+                        <!-- Full-width Figure -->
+                        <div class="mt-6">
+                            <img src="pictures/sequential-attractors-architectures-v2.png" alt="Architectures supporting sequential attractors" class="w-full max-w-xl mx-auto">
+                            <p class="text-xs text-center text-slate-500 mt-2">Summary of new architectures and their related theorems for sequential dynamics.</p>
+                        </div>
+
+                        <p class="text-sm text-slate-600 mt-6">
+                            <strong>Related Publication:</strong> <a href="https://epubs.siam.org/doi/10.1137/21M1445120" target="_blank">Sequential attractors in combinatorial threshold-linear networks.</a>
+                        </p>
+                    </div>
+
+                    <!-- Project 2: gCTLNs -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-800 mb-3">2. How can these network principles be generalized for more flexible control?</h3>
+                        
+                        <!-- Existing Text for Project 2 -->
+                        <div class="leading-relaxed text-slate-700 mb-4">
+                            <p class="mb-4">
+                                In this project, I generalized the modular structures above to a broader class of networks (gCTLNs). This extended the framework to allow for neuron-specific inhibition parameters, rather than just global ones. These results demonstrate the robustness of modular network design and enable more flexible control over the network's dynamics.
+                            </p>
+                        </div>
+                        
+                        <!-- Full-width Figure -->
+                        <div class="mt-6">
+                            <img src="pictures/generalized_cyclic_union_small_example-v4.png" alt="Comparison of dynamics for CTLNs and gCTLNs" class="w-full max-w-xl mx-auto">
+                            <p class="text-xs text-center text-slate-500 mt-2">Comparison of CTLN and gCTLN dynamics, showing more flexible patterns.</p>
+                        </div>
+
+                         <p class="text-sm text-slate-600 mt-6">
+                            <strong>Related Publication:</strong> Fixed point decompositions for composite generalized combinatorial threshold-linear networks. (In preparation)
+                        </p>
+                    </div>
+
+                    <!-- Project 3: Quadruped Gaits -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-800 mb-3">3. How can we leverage these insights to engineer efficient networks for complex behaviors?</h3>
+                        
+                        <!-- Existing Text for Project 3 -->
+                        <div class="leading-relaxed text-slate-700 mb-4">
+                            <p class="mb-4">
+                               We can use the cyclic union structure to model quadruped gaits. In this project, I designed a single 23-node network that supports five different quadruped gaits, each one encoded as a different dynamic attractor accessible via different initial conditions.
+                            </p>
+                            <p>
+                                Also, by coupling this network to sequence of fixed points, we created a network that can step through a sequence of different gaits, by independently encoding of motor motifs and sequence position.
+                            </p>
+                        </div>
+                        
+                        <!-- Full-width Figure -->
+                        <div class="mt-6">
+                            <img src="pictures/summary_of_past_work_v3.png" alt="Quadruped gait network summary" class="w-full max-w-xl mx-auto">
+                            <p class="text-xs text-center text-slate-500 mt-2">A single network capable of producing five different quadruped gaits.</p>
+                        </div>
+
+                        <p class="text-sm text-slate-600 mt-6">
+                            <strong>Related Publication:</strong> <a href="https://www.biorxiv.org/content/10.1101/2025.03.07.642121v2" target="_blank">Attractor-based models for sequences and pattern generation in neural circuits. (Preprint)</a>
+                        </p>
+                    </div>
+
+                    <!-- What;s next -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-800 mb-3">What's next?</h3>
+                        
+                        <!-- Existing Text for Project 3 -->
+                        <div class="leading-relaxed text-slate-700 mb-4">
+                            <p class="mb-4">
+                                Currently, we are trying to translate the design principles of graph-based TLNs into analog neuromorphic hardware. With our collaborator <a href="https://sites.google.com/view/marcelo-j-rozenberg/home?authuser=0" target="_blank">Marcelo Rozenberg</a>, we have managed to reproduce some small motifs (see Fig) using computational simulations. We are working on implementing more complex computations.
+                            </p>
+                        </div>
+                        
+                        <!-- Full-width Figure -->
+                        <div class="mt-6">
+                            <img src="pictures/aLIF_vs_CTLN.png" alt="Quadruped gait network summary" class="w-full max-w-xl mx-auto">
+                            <p class="text-xs text-center text-slate-500 mt-2">A single network capable of producing five different quadruped gaits.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+<!-- Selected Presentations Section -->
+            <section id="talks" class="bg-white p-6 lg:p-8 rounded-lg shadow-sm mb-8 scroll-mt-24">    
+                <h2 class="text-2xl font-bold text-slate-900 mb-5 border-b pb-3">Presentations</h2>
+                
+                <h4 class="text-lg font-semibold text-slate-800 mb-2">Talks</h4>
+                <ul class="list-none space-y-3 text-slate-700 mb-6">
+                  <li><span class="font-medium">Invited talk:</span> Boston University Dynamics Seminar, Boston University, USA, Sep 2025</li>
+                  <li><span class="font-medium">Talk:</span> NITMB MathBio Convergence Conference (selected for talk), Chicago, USA, Aug 2025 <a href="https://www.nitmb.org/nitmb-mathbio-convergence-conference">[video and slides]</a></li>
+                  <li><span class="font-medium">Invited talk:</span> SIAM Conference on Algebraic Geometry, Madison, USA, Jul 2025</li>
+                  <li><span class="font-medium">Invited talk:</span> SIAM Conference on Dynamical Systems, Denver, USA, May 2025</li>
+                  <li><span class="font-medium">Invited talk:</span> Special Session of AMS Sectional Meeting, University of Connecticut, USA, Apr 2025</li>
+                  <li><span class="font-medium">Invited talk:</span> New England Dynamics Seminar, University of Massachusetts Amherst, USA, Nov 2024</li>
+                  <li><span class="font-medium">Invited talk:</span> Lefschetz Center for Dynamical Systems seminar, Brown University, USA, Nov 2024</li>
+                  <li><span class="font-medium">🇨🇴 Invited talk:</span> 2da Semana Institucional de Ciencias Básicas, Fundación Universitaria de Ciencias de la Salud, Colombia, Jul 2024</li>
+                  <li><span class="font-medium">🇨🇴 Invited talk:</span> MAPI3: Tercera Conferencia Colombiana de Matemáticas Aplicadas e Industriales, Online, Colombia, Jun 2024 <a href="pdfs/MAPI3ColombiaJunio2024.pdf">[pdf]</a></li>
+                  <li><span class="font-medium">Invited talk:</span> Special Session of AMS Sectional Meeting, Creighton University, USA, Oct 2023</li>
+                  <li><span class="font-medium">Talk:</span> CCN Junior Theoretical Neuroscientist’s Workshop, Flatiron Institute, USA, Jun 2023</li>
+                  <li><span class="font-medium">Talk:</span> CoNNExINS, New York University, USA, Jun 2023</li>
+                  <li><span class="font-medium">Invited talk:</span> Diversity in Math Bio summer seminar, Society for Mathematical Biology, Online, USA, Jun 2023</li>
+                  <li><span class="font-medium">Invited talk:</span> Theoretical biology seminar, Pennsylvania State University, USA, Oct 2022</li>
+                  <li><span class="font-medium">Invited talk:</span> Dynamical Principles of Biological and Artificial Neural Networks Workshop, BIRS, Canada, Jan 2022 <a href="https://www.birs.ca/events/2022/5-day-workshops/22w5047/videos/watch/202201130950-LondonoAlvarez.html">[video]</a></li>
+                </ul>
+
+                <h4 class="text-lg font-semibold text-slate-800 mb-2">Poster presentations</h4>
+                <ul class="list-none space-y-3 text-slate-700">
+                  <li><span class="font-medium">Poster:</span> BRAIN NeuroAI Workshop (selected for Poster Blitz presentation), National Institutes of Health, USA, Nov 2024</li>
+                  <li><span class="font-medium">Poster:</span> Benzon Symposium 67, Copenhagen, Denmark, Sep 2023 <a href="pdfs/BenzonSymposium67v2.pdf">[pdf]</a></li>
+                  <li><span class="font-medium">Poster:</span> Society for Neuroscience, San Diego, USA, Nov 2022 <a href="pdfs/SfNposter2022nov8.pdf">[pdf]</a></li>
+                  <li><span class="font-medium">Poster:</span> Center for Neural Engineering Retreat, Penn State, USA, Aug 2022</li>
+                  <li><span class="font-medium">Poster:</span> Computational Neuroscience Meeting (CNS), Online, USA, Jul 2021</li>
+                </ul>
+            </section>
+            
+            <!-- Publications Section -->
+            <section id="papers" class="bg-white p-6 lg:p-8 rounded-lg shadow-sm mb-8 scroll-mt-24">    
+                <h2 class="text-2xl font-bold text-slate-900 mb-5 border-b pb-3">Publications</h2>
+                <div class="space-y-4 leading-relaxed text-slate-700">
+                    <p><b>Fixed point decompositions for composite generalized combinatorial threshold-linear networks.</b> <b>J. Londoño Álvarez</b>. In preparation.</p>
+                    
+                    <p><b><a href="https://www.biorxiv.org/content/10.1101/2025.03.07.642121v2" target="_blank">Attractor-based models for sequences and pattern generation in neural circuits.</a></b> <b>J. Londoño Álvarez</b>, K. Morrison, C. Curto. Preprint: <a href="https://doi.org/10.1101/2025.03.07.642121" target="_blank">https://doi.org/10.1101/2025.03.07.642121</a>. [revised manuscript in review in Neural Computation]</p>
+
+                    <p><b> <a href="https://dsweb.siam.org/The-Magazine/Article/sequence-generation-in-inhibition-dominated-neural-networks">Sequence generation in inhibition-dominated neural networks (summary of Sequential attractors in combinatorial threshold-linear networks). </a></b> C. Parmelee, <b>J. Londoño Álvarez</b>, C. Curto, K. Morrison.</p>
+                    
+                    <p><b> <a href="https://epubs.siam.org/doi/10.1137/21M1445120">Sequential attractors in combinatorial threshold-linear networks. </a></b> C. Parmelee, <b>J. Londoño Álvarez</b>, C. Curto, K. Morrison. SIAM Journal on Applied Dynamical Systems, Vol. 21, Issue 2, pp. 735-1661.</p>
+                </div>
+            </section>
+
+
+<!-- Teaching Section -->
+            <section id="teaching" class="bg-white p-6 lg:p-8 rounded-lg shadow-sm mb-8 scroll-mt-24">    
+                <h2 class="text-2xl font-bold text-slate-900 mb-5 border-b pb-3">Teaching</h2>
+                
+                <div class="space-y-4 leading-relaxed text-slate-700">
+                    <p>
+                        During my time at Penn State (2020–2024), I was an Instructor for MATH220 (Matrices) for 3 semesters. I received the Departmental Graduate Teaching Award in Fall 2022.
+                    </p>
+                    <p>
+                        During my time at Universidad Nacional de Colombia (2017–2019), I was an Instructor for Vector Geometry (2 semesters) and a Teaching Assistant for Linear Algebra (1 semester) and Vector Geometry (3 semesters).
+                    </p>
+                </div>
+            </section>
+
+            <!-- Other Projects Section -->
+            <section id="other" class="bg-white p-6 lg:p-8 rounded-lg shadow-sm mb-8 scroll-mt-24">    
+              <h2 class="text-2xl font-bold text-slate-900 mb-5 border-b pb-3">Other projects</h2>
+              <div class="space-y-3 leading-relaxed text-slate-700">
+                  <p><b> <a href="https://www.erdosinstitute.org/certificates/spring-2024/data-science-boot-camp/juliana-londono-alvarez"> The impact of urban features on health outcomes.</a></b></p>
+                  <p><b> <a href="pdfs/SWDBPresentationSept2022.pdf"> Community detection of neural ensembles from large spike-train data.</a></b> 2-week project at the Allen's Summer Workshop on the Dynamic Brain.</p>
+              </div>
+            </section>
+
+        </main>
+    </div>
+  </div>
     
 </body>
-
 </html>
