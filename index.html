@@ -89,7 +89,7 @@
         
             <!-- Job Market Banner -->
             <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-5 rounded-lg shadow-sm mb-8">
-                <p class="font-medium">I'm on the <strong>Job Market</strong> for Fall 2026. Please feel free to reach out to discuss my research and teaching.</p>
+                <p class="font-medium">I'm currently on the <strong>Job Market</strong> for Fall 2026. Please feel free to reach out to discuss my research and teaching.</p>
             </div>
 
             <!-- About Me Section -->
@@ -122,7 +122,7 @@
                         <!-- New Text for Project 1 -->
                         <div class="leading-relaxed text-slate-700 mb-4">
                             <p>
-                                This project investigated variations of the cyclic union structure that also support sequential dynamics. As a result, I obtained three new architectures (Fig), each with theorems constraining the fixed points of the whole network in terms of the fixed points of its component subnetworks.
+                                This project investigated variations of the cyclic union architecture (panel A) that also support sequential dynamics. As a result, I obtained three new architectures (panels B - D), each with theorems constraining the fixed points of the whole network in terms of the fixed points of its component subnetworks.
                             </p>
                         </div>
 
@@ -166,10 +166,10 @@
                         <!-- Existing Text for Project 3 -->
                         <div class="leading-relaxed text-slate-700 mb-4">
                             <p class="mb-4">
-                               We can use the cyclic union structure to model quadruped gaits. In this project, I designed a single 23-node network that supports five different quadruped gaits, each one encoded as a different dynamic attractor accessible via different initial conditions.
+                               We can use the cyclic union structure to model quadruped gaits. In this project, I designed a single 23-node network that supports five different quadruped gaits (panel A), each one encoded as a different dynamic attractor accessible via different initial conditions (panel B).
                             </p>
                             <p>
-                                Also, by coupling this network to sequence of fixed points, we created a network that can step through a sequence of different gaits, by independently encoding of motor motifs and sequence position.
+                                Also, by coupling this network to sequence of fixed points, we created a network that can step through a sequence of different gaits, by independently encoding of motor motifs and sequence position (panel C).
                             </p>
                         </div>
                         
@@ -184,22 +184,40 @@
                         </p>
                     </div>
 
-                    <!-- What;s next -->
+<!-- What's next (I) -->
                     <div>
-                        <h3 class="text-lg font-semibold text-slate-800 mb-3">What's next?</h3>
-                        
-                        <!-- Existing Text for Project 3 -->
+                        <h3 class="text-lg font-semibold text-slate-800 mb-3">4. Can these design principles be translated to neuromorphic hardware?</h3>
                         <div class="leading-relaxed text-slate-700 mb-4">
                             <p class="mb-4">
-                                Currently, we are trying to translate the design principles of graph-based TLNs into analog neuromorphic hardware. With our collaborator <a href="https://sites.google.com/view/marcelo-j-rozenberg/home?authuser=0" target="_blank">Marcelo Rozenberg</a>, we have managed to reproduce some small motifs (see Fig) using computational simulations. We are working on implementing more complex computations.
+                                Currently, we are trying to translate the design principles of graph-based TLNs into analog neuromorphic hardware. With our collaborator <a href="https://sites.google.com/view/marcelo-j-rozenberg/home?authuser=0" target="_blank">Marcelo Rozenberg</a>, we have already reproduced some small motifs (see Fig) from our theory, using the dynamics of his model neurons via simulations. We are working on implementing more complex computations, and moving them onto hardware.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <img src="pictures/aLIF_vs_CTLN.png" alt="Comparison of aLIF and CTLN models" class="w-full max-w-xl mx-auto">
+                            <!-- Corrected Caption -->
+                            <p class="text-xs text-center text-slate-500 mt-2">Comparison of aLIF and CTLN models.</p>
+                        </div>
+                    </div>
+
+                    <!-- What's next (II) - Donoghue Project -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-800 mb-3">5. How can attractor models explain neural binding in cortical circuits?</h3>
+
+                        <!-- Figure with text-wrap layout -->
+                        <div class="mt-6 md:w-1/5 md:float-left md:mr-6">
+                            <img src="pictures/monkey_binding.png" alt="Binding modeled as cyclic union" class="w-full max-w-xs mx-auto">
+                            <p class="text-xs text-center text-slate-500 mt-2">Binding modeled as a cyclic union.</p>
+                        </div>
+                        
+                        <!-- Text to wrap around the figure -->
+                        <div class="leading-relaxed text-slate-700 mb-4 space-y-4">
+                            <p>
+                                This project seeks to understand how the brain composes skilled and flexible behavior through networks that dynamically link neurons across cortical areas. We are developing attractor models for neural binding using data from a delayed reaching task from the <a href="https://sites.brown.edu/donoghuelab/people/" target="_blank">Donoghue lab</a>. The task's combinatorial design, which recorded neural activity for specific object-grip combinations, makes it ideal for testing mechanistic hypotheses about the compositional reuse of neural populations. We are exploring models like the cyclic union (Fig) to test different predictions about these binding dynamics.
                             </p>
                         </div>
                         
-                        <!-- Full-width Figure -->
-                        <div class="mt-6">
-                            <img src="pictures/aLIF_vs_CTLN.png" alt="Quadruped gait network summary" class="w-full max-w-xl mx-auto">
-                            <p class="text-xs text-center text-slate-500 mt-2">A single network capable of producing five different quadruped gaits.</p>
-                        </div>
+                        <!-- Clear the float to prevent layout issues with the next section -->
+                        <div class="clear-both"></div>
                     </div>
 
                 </div>
